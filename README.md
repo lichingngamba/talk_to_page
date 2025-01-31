@@ -24,5 +24,5 @@
 
 > [!NOTE]
 > The project will use langchain and webui to chat with the web pages and get the most relevant information.
->[!TIPS]
+>[!TIP]
 > The project is under development.
