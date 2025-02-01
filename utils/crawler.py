@@ -18,7 +18,7 @@ def process_url(url):
         response.raise_for_status()  # Check for HTTP errors
     except requests.RequestException as e:
         print(f"Error fetching {url}: {e}")
-        return None
+        return {'url': None, 'type': 'error', 'content': None, 'links': None}
 
     content_type = response.headers.get('Content-Type', '').lower()
     # If the content is a PDF (check MIME type or URL extension)
@@ -67,7 +67,7 @@ def crawl(seed_url, max_depth=1):
     while to_visit:
         current_url, depth = to_visit.pop(0)
         if current_url in visited or depth > max_depth:
-            continue
+            break
         visited.add(current_url)
         data = process_url(current_url)
         if data:
@@ -77,21 +77,26 @@ def crawl(seed_url, max_depth=1):
                 for link in data['links']:
                     # Normalize the URL (this example assumes absolute URLs)
                     if link.startswith('http'):
-                        to_visit.append((link, depth + 1))
+                        if depth < max_depth - 1:
+                            to_visit.append((link, depth + 1))
+                        else:    
+                            break
         # You can add a delay here to respect target servers.
     return results
 
 def main(seed_url):
     '''The main file to run the crawler'''
     scraped_data = crawl(seed_url)
+    print(len(scraped_data)) 
     for item in scraped_data:
         print(f"\nURL: {item['url']}")
-        print(f"Type: {item['type']}")
-        print("Content:\n" + item['content'].strip() + "\n")
+    #     print(f"Type: {item['type']}")
+        # print("Content:\n" + item['content'].strip() + "\n")
 
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv) < 2:
-        print("Usage: python crawler.py <seed_url>")
-        sys.exit(1)
-    main(sys.argv[1])
+    # import sys
+    # if len(sys.argv) < 2:
+    #     print("Usage: python crawler.py <seed_url>")
+    #     sys.exit(1)
+    # main(sys.argv[1])
+    main('https://en.wikipedia.org/wiki/Nigeria')

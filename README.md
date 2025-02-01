@@ -1,3 +1,11 @@
+## Quick Links
+* [ Talk to page](#talk-to-page)
+* [Getting Started](#getting-started)
+* [Flowchart](#flowchart)
+* [Screen Recording](#screen-recording)
+* [Features](#features)
+* [Contributing](#contributing)
+
 ## Talk to page
 
 - This project let you chat with a given url particularly research paper links. 
@@ -6,20 +14,40 @@
 
 ## Getting Started
 
-- Clone the repository
-- Install the requirements
-- Run the server
+> [!IMPORTANT]
+> in the `.env`, file make sure to put with your own `Huggingface API token` enable with Inference.
+
+- Clone the repository from github.
+- cd talkl_to_page
+> [!TIP]
+> RUN `make start` to start the agent for the first time
+> RUN `make run` to restart the agent
+> Project will be available at http://localhost:8501
+
+- Using Doker
+> [!TIP] 
+> docker build -t talk-to-page:latest -f Dockerfile .
+> docker run -p 8501:8501 talk-to-page:latest
+> Project will be available at http://localhost:8501
+
+- Using pip
+> [!TIP]
+> pip install .
+> CMD `start`
+> Project will be available at http://localhost:8501
 
 ## Flowchart
+![flowchart](media/flowchart.png)
 
-![flowchart](image/flowchart.png)
+## Screen Recording
+<video controls src="media/record_talk_to_url.mp4" title="Title"></video>
 
 ## Features
-
 - Chat with web pages
 - Get the most relevant information
 - Use the web pages as the context
 - Use the advancements of LLM
+- In the Query provide a url, [there is no need of a specific format]
 
 ## Contributing
 
@@ -32,3 +60,7 @@
 > [!TIP]
 > The project is under development.
 
+> [!NOTE]
+> The project is open source and free to use.
+> The project is a mid level RAG based AI Agent, which can be used to chat with web pages and get the most relevant information.
+> For more advanced RAG based AI Agent, please contact the developer.
