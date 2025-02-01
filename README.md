@@ -22,8 +22,7 @@
 - cd talkl_to_page
 
 > [!TIP] 
-
-- Using Makefile
+> Using Makefile
 
 > RUN `make start` to start the agent for the first time
 
@@ -33,8 +32,7 @@
 
 
 > [!TIP] 
-
-- Using Doker
+> Using Doker
 
 > `docker build -t talk-to-page:latest -f Dockerfile .`
 
@@ -43,8 +41,7 @@
 > Project will be available at http://localhost:8501
 
 > [!TIP]
-
-- Using pip
+> Using pip
 
 > pip install .
 
