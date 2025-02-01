@@ -45,6 +45,10 @@
 ## Flowchart
 ![flowchart](media/flowchart.png)
 
+> [!NOTE]
+> Searching the internet component is not release!! Please contact the developer for more information.
+
+
 ## Screen Recording
 <video controls src="media/record_talk_to_url.mp4" title="Title"></video>
 
