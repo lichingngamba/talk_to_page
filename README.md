@@ -23,7 +23,7 @@
 - Create a new branch
 
 > [!NOTE]
-> The project will use langchain and webui to chat with the web pages and get the most relevant information.
+> The project will use Haystack and webui to chat with the web pages and get the most relevant information.
 
 > [!TIP]
 > The project is under development.
