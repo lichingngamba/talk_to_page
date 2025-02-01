@@ -10,6 +10,10 @@
 - Install the requirements
 - Run the server
 
+## Flowchart
+
+![flowchart](.image\flowchart.png)
+
 ## Features
 
 - Chat with web pages
