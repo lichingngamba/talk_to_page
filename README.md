@@ -15,7 +15,6 @@
 ## Getting Started
 
 > [!IMPORTANT]
-
 > in the `.env`, file make sure to put with your own `Huggingface API token` enable with Inference.
 
 - Clone the repository from github.
@@ -24,30 +23,24 @@
 > [!TIP] 
 > Using Makefile
 
-> RUN `make start` to start the agent for the first time
-
-> RUN `make run` to restart the agent
-
-> Project will be available at http://localhost:8501
+- RUN `make start` to start the agent for the first time
+- RUN `make run` to restart the agent
+- Project will be available at http://localhost:8501
 
 
 > [!TIP] 
 > Using Doker
 
-> `docker build -t talk-to-page:latest -f Dockerfile .`
-
-> `docker run -p 8501:8501 talk-to-page:latest`
-
-> Project will be available at http://localhost:8501
+- `docker build -t talk-to-page:latest -f Dockerfile .`
+- `docker run -p 8501:8501 talk-to-page:latest`
+- Project will be available at http://localhost:8501
 
 > [!TIP]
 > Using pip
 
-> pip install .
-
-> CMD `start`
-
-> Project will be available at http://localhost:8501
+- pip install .
+- CMD `start`
+-Project will be available at http://localhost:8501
 
 ## Flowchart
 ![flowchart](media/flowchart.png)
