@@ -12,7 +12,7 @@
 
 ## Flowchart
 
-![flowchart](image\flowchart.png)
+![flowchart](image/flowchart.png)
 
 ## Features
 
