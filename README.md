@@ -15,7 +15,7 @@
 ## Getting Started
 
 > [!IMPORTANT]
-> in the `.env`, file make sure to put your own `Huggingface API token` enable with Inference.
+> In the `.env`, file make sure to put your own `Huggingface API token` enable with Inference.
 
 - Clone the repository from github.
 - cd talkl_to_page
