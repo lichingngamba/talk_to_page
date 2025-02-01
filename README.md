@@ -15,25 +15,41 @@
 ## Getting Started
 
 > [!IMPORTANT]
+
 > in the `.env`, file make sure to put with your own `Huggingface API token` enable with Inference.
 
 - Clone the repository from github.
 - cd talkl_to_page
-> [!TIP]
+
+> [!TIP] 
+
+- Using Makefile
+
 > RUN `make start` to start the agent for the first time
+
 > RUN `make run` to restart the agent
+
 > Project will be available at http://localhost:8501
+
+
+> [!TIP] 
 
 - Using Doker
-> [!TIP] 
-> docker build -t talk-to-page:latest -f Dockerfile .
-> docker run -p 8501:8501 talk-to-page:latest
+
+> `docker build -t talk-to-page:latest -f Dockerfile .`
+
+> `docker run -p 8501:8501 talk-to-page:latest`
+
 > Project will be available at http://localhost:8501
 
-- Using pip
 > [!TIP]
+
+- Using pip
+
 > pip install .
+
 > CMD `start`
+
 > Project will be available at http://localhost:8501
 
 ## Flowchart
