@@ -64,7 +64,7 @@
 > The project will use Haystack and webui to chat with the web pages and get the most relevant information.
 
 > [!TIP]
-> The project is under development.
+> The project development is pause * [ ].
 
 > [!NOTE]
 > The project is open source and free to use.
