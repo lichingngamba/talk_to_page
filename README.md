@@ -52,7 +52,10 @@
 ## Screen Recording
 <video controls src="media/record_talk_to_url.mp4" title="Title"></video>
 [🎥 Download the recording](media/record_talk_to_url.mp4)
-[![Watch the video])](https://youtu.be/-EY5a6K_Zck)
+
+[![Watch the video](media/talk_toUrl.png)](https://youtu.be/-EY5a6K_Zck)
+
+
 
 
 ## Features
