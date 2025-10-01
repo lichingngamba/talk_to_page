@@ -51,7 +51,9 @@
 
 ## Screen Recording
 <video controls src="media/record_talk_to_url.mp4" title="Title"></video>
-[🎥 Watch Screen Recording](media/record_talk_to_url.mp4)
+[🎥 Download the recording](media/record_talk_to_url.mp4)
+[![Watch the video])](https://youtu.be/-EY5a6K_Zck)
+
 
 ## Features
 - Chat with web pages
